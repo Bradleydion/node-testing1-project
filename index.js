@@ -8,6 +8,11 @@
  */
 function trimProperties(obj) {
   // ✨ implement
+  const objCopy = {...obj};
+  for (const property in obj){
+    objCopy[property]= objCopy[property].trim()
+  }
+  return objCopy
 }
 
 /**
@@ -41,6 +46,7 @@ class Counter {
    */
   constructor(initialNumber) {
     // ✨ initialize whatever properties are needed
+
   }
 
   /**
